@@ -1,0 +1,5 @@
+C:\Github\GloboMart\GloboMart\GloboMart.Pricing.Service\GloboMart.Pricing.WebApi.Tests\bin\Debug\GloboMart.Tests.dll
+C:\Github\GloboMart\GloboMart\GloboMart.Pricing.Service\GloboMart.Pricing.WebApi.Tests\bin\Debug\GloboMart.Tests.pdb
+C:\Github\GloboMart\GloboMart\GloboMart.Pricing.Service\GloboMart.Pricing.WebApi.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Github\GloboMart\GloboMart\GloboMart.Pricing.Service\GloboMart.Pricing.WebApi.Tests\obj\Debug\GloboMart.Tests.dll
+C:\Github\GloboMart\GloboMart\GloboMart.Pricing.Service\GloboMart.Pricing.WebApi.Tests\obj\Debug\GloboMart.Tests.pdb

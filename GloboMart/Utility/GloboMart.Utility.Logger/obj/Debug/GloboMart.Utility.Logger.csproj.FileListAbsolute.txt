@@ -1,0 +1,4 @@
+C:\Github\GloboMart\GloboMart\Utility\GloboMart.Utility.Logger\bin\Debug\GloboMart.Utility.Logger.dll
+C:\Github\GloboMart\GloboMart\Utility\GloboMart.Utility.Logger\bin\Debug\GloboMart.Utility.Logger.pdb
+C:\Github\GloboMart\GloboMart\Utility\GloboMart.Utility.Logger\obj\Debug\GloboMart.Utility.Logger.dll
+C:\Github\GloboMart\GloboMart\Utility\GloboMart.Utility.Logger\obj\Debug\GloboMart.Utility.Logger.pdb
