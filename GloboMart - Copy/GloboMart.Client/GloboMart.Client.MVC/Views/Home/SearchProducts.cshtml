@@ -1,0 +1,46 @@
+﻿@model GloboMart.Client.MVC.Models.ProductViewModel
+
+@{
+    ViewBag.Title = "Search Products";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Search Products</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+        </div>
+
+        <p>
+            <input type="button" id="btnSubmit" value="SearchProduct(Json,Api)" />
+        </p>
+    </fieldset>
+}
+
+<script lang="ja" type="text/javascript">
+    $(document).ready(function () {
+        $("#btnSubmit").click(function () {
+            var Name = $("#Name").val();
+            $.ajax({
+                url: "http://localhost:81/api/Product/Search/" + Name,
+                type: "Get",
+                contentType: 'application/json; charset=utf-8',
+                success: function (data) {
+                    alert(JSON.stringify(data));
+                },
+                error: function (ex) {
+                    alert('error ' + JSON.stringify(ex));
+                }
+            });
+        });
+    });
+</script>

@@ -1,0 +1,4 @@
+C:\Github\Globomart\GloboMart\Common\GloboMart.Contracts\bin\Debug\GloboMart.Contracts.dll
+C:\Github\Globomart\GloboMart\Common\GloboMart.Contracts\bin\Debug\GloboMart.Contracts.pdb
+C:\Github\Globomart\GloboMart\Common\GloboMart.Contracts\obj\Debug\GloboMart.Contracts.dll
+C:\Github\Globomart\GloboMart\Common\GloboMart.Contracts\obj\Debug\GloboMart.Contracts.pdb

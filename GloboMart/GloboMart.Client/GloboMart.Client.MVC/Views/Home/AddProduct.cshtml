@@ -1,0 +1,59 @@
+﻿@model GloboMart.Client.MVC.Models.ProductViewModel
+
+@{
+    ViewBag.Title = "Add Product";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Product</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Price)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Price)
+            @Html.ValidationMessageFor(model => model.Price)
+        </div>
+
+        <p>
+            <input type="button" id="btnSubmit" value="AddProduct(Json,Api)" />
+        </p>
+    </fieldset>
+}
+
+<script lang="ja" type="text/javascript">
+    $(document).ready(function () {
+        $("#btnSubmit").click(function () {
+            var obj = new Object();
+            obj.ID = 0;
+            obj.Name = $("#Name").val();
+            obj.Price = $("#Price").val();
+            alert(JSON.stringify(obj));
+            $.ajax({
+                url: "http://localhost:81/api/Product/PostProduct",
+                type: "Post",
+                data: JSON.stringify(obj),
+                contentType: 'application/json; charset=utf-8',
+                success: function (data) {
+                    alert('Added Successfully');
+                },
+                error: function (ex) {
+                    alert('error ' + JSON.stringify(ex));
+                }
+            });
+        });
+    });
+</script>

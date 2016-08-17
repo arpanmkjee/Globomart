@@ -1,0 +1,46 @@
+﻿@model GloboMart.Client.MVC.Models.ProductViewModel
+
+@{
+    ViewBag.Title = "Get Product Price";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Get Product Price</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ID)
+        </div>
+
+        <p>
+            <input type="button" id="btnSubmit" value="GetProductPrice(Json,Api)" />
+        </p>
+    </fieldset>
+}
+
+<script lang="ja" type="text/javascript">
+    $(document).ready(function () {
+        $("#btnSubmit").click(function () {
+            var ID = $("#ID").val();
+            $.ajax({
+                url: "http://localhost:82/api/Pricing/GetProductPrice/"+ID,
+                type: "Get",
+                contentType: 'application/json; charset=utf-8',
+                success: function (data) {
+                    alert(data);
+                },
+                error: function (ex) {
+                    alert('error ' + JSON.stringify(ex));
+                }
+            });
+        });
+    });
+</script>

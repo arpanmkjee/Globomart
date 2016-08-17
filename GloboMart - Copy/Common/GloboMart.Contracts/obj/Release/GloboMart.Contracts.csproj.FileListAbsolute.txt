@@ -1,0 +1,5 @@
+C:\Github\Globomart\GloboMart\Common\GloboMart.Contracts\bin\Release\GloboMart.Contracts.dll
+C:\Github\Globomart\GloboMart\Common\GloboMart.Contracts\bin\Release\GloboMart.Contracts.pdb
+C:\Github\Globomart\GloboMart\Common\GloboMart.Contracts\obj\Release\GloboMart.Contracts.csprojResolveAssemblyReference.cache
+C:\Github\Globomart\GloboMart\Common\GloboMart.Contracts\obj\Release\GloboMart.Contracts.dll
+C:\Github\Globomart\GloboMart\Common\GloboMart.Contracts\obj\Release\GloboMart.Contracts.pdb
